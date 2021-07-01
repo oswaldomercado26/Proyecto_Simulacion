@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/Proyecto_Simulacion/[Ll]ibrary/
-/Proyecto_Simulacion/[Tt]emp/
-/Proyecto_Simulacion/[Oo]bj/
-/Proyecto_Simulacion/[Bb]uild/
-/Proyecto_Simulacion/[Bb]uilds/
-/Proyecto_Simulacion/[Ll]ogs/
-/Proyecto_Simulacion/[Uu]ser[Ss]ettings/
+/actualizacion\ juego/[Ll]ibrary/
+/actualizacion\ juego/[Tt]emp/
+/actualizacion\ juego/[Oo]bj/
+/actualizacion\ juego/[Bb]uild/
+/actualizacion\ juego/[Bb]uilds/
+/actualizacion\ juego/[Ll]ogs/
+/actualizacion\ juego/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
