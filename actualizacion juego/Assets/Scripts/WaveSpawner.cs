@@ -20,7 +20,8 @@ public class WaveSpawner : MonoBehaviour
     public Text waveCountdownText;    
     public GameObject waveContCountainer;
     public Text totalEnemies;    
-    public Text enemiesLeft; 
+    public Text enemiesLeft;
+    public Text waveCount; 
     public GameObject enemiesContainer;   
     public GameObject gameOverScreen;   
     public GameObject healthBar;
@@ -57,6 +58,7 @@ public class WaveSpawner : MonoBehaviour
             waveCountdownText.text = Mathf.FloorToInt(countdownWaves + 1).ToString();
         } else {
             gameOverScreen.SetActive(true);
+            waveCount.text = ( waveIndex - 1 ).ToString();
             waveContCountainer.SetActive(false);
             enemiesContainer.SetActive(false);
             healthBar.SetActive(false);

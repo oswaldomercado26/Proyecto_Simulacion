@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
 {
     
     public int damage = 5;
+    public int life = 10;
 
     public ParticleSystem ded;
 
@@ -35,8 +36,18 @@ public class EnemyMovement : MonoBehaviour
         {  
             launchParticles();
         }
+        if( life <1 )
+        {
+            Destroy(gameObject);
+        }
     }
 
+    private void OnTriggerEnter(Collider other) {
+        if ( other.gameObject.CompareTag("Ball")){
+            life -= 5;
+            launchParticles();
+        }
+    }
     private void GetNextWaypoint()
     {
 

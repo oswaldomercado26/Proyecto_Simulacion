@@ -26,8 +26,10 @@ public class PlayerGrab : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            Debug.Log("grabAction");
             if (!inHands && myHand.GetComponent<Grab>().canGrab)
             {
+            Debug.Log("agarrar");
                 ballCol.isTrigger = true;
                 ball.transform.SetParent(myHand.transform);
                 ball.transform.localPosition = new Vector3(0f, -.5f, 0f);
@@ -36,6 +38,7 @@ public class PlayerGrab : MonoBehaviour
                 inHands = true;
             }else if (inHands)
             {
+            Debug.Log("soltar");
                 ballCol.isTrigger = false;
                 ballRb.useGravity = true;
                 this.GetComponent<PlayerGrab>().enabled = false;
