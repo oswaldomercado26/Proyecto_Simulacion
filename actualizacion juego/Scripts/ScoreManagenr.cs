@@ -1,0 +1,27 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+public class ScoreManagenr : MonoBehaviour
+{
+    public Text scoreText;
+    public Text highscoreText;
+
+    int score = 0;
+    int highscore = 0;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //muestra letrero de cuantas oleadas sobreviviste ya cuando termina el game over
+        scoreText.text = score.ToString() + " SCORE";
+        highscoreText.text = "HIGHSCORE: " + highscore.ToString();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
